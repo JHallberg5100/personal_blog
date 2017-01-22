@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HallBlog</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div id="header-bar">
+    <a href="/"> Home</a>
+    <%= link_to "Add New Post", new_post_path%>
+  </div>
+
+<%= yield %>
+
+</body>
+</html>
